@@ -13,108 +13,110 @@
         <p>Cette page vous permet de nous soumettre vos informations de facturation.</p>
     </header>
     
-    <div class="menuDuHaut">
-        <a href="#information">Information</a>
-        <span>|</span>
-        <a href="#faq">F.A.Q</a>
-        <span>|</span>
-        <a href="#contact">Nous contacter</a>
-    </div>
+    <main>
+        <div class="menuDuHaut">
+            <a href="#information">Information</a>
+            <span>|</span>
+            <a href="#faq">F.A.Q</a>
+            <span>|</span>
+            <a href="#contact">Nous contacter</a>
+        </div>
 
-    <div class="background">
-        <form action="#" method="post">
-            <h2>Informations de facturation</h2>
-            <label class="fournisseur" for="fournisseur">FOURNISSEUR</label>
-            <select id="fournisseur" name="fournisseur">
-                <option value="f1">Fournisseur 1</option>
-                <option value="f2">Fournisseur 2</option>
-                <option value="f3">Fournisseur 3</option>
-                <option value="f4">Autres</option>
-            </select>
-            <div class="formulaire">
-                    <fieldset class="contour">
-                            <legend>ENTREPRISE</legend><br>
-                            <div class="entreprise">
-                            <label for="societe">SOCIÉTÉ*</label><br>
-                            <input type="text" id="societe" name="societe" size="50" placeholder="Nom de la société"><br>
-                            
-                            <label for="ntva">N° TVA</label><br>
-                            <input type="number" id="ntva" name="ntva"  class="custom-input1" placeholder="TVA"><br>
-                            
-                            <label for="adresse">ADRESSE</label><br>
-                            <textarea id="adresse" name="adresse" rows="5" cols="52" placeholder="Adresse complète"></textarea><br>
-                            
-                            <label for="codePostal">CODE POSTAL</label><br>
-                            <input type="number" id="codePostal" name="codePostal"  class="custom-input2" placeholder="CP"><br>
-                            
-                            <label for="ville">VILLE</label><br>
-                            <input type="text" id="ville" name="ville" size="15" placeholder="Nom de la ville"><br>
-                            </div>
-                    </fieldset>
+        <div class="background">
+            <form action="#" method="post">
+                <h2>Informations de facturation</h2>
+                <label class="fournisseur" for="fournisseur">FOURNISSEUR</label>
+                <select id="fournisseur" name="fournisseur">
+                    <option value="f1">Fournisseur 1</option>
+                    <option value="f2">Fournisseur 2</option>
+                    <option value="f3">Fournisseur 3</option>
+                    <option value="f4">Autres</option>
+                </select>
+                <div class="formulaire">
+                        <fieldset class="contour">
+                                <legend>ENTREPRISE</legend><br>
+                                <div class="entreprise">
+                                <label for="societe">SOCIÉTÉ*</label><br>
+                                <input type="text" id="societe" name="societe" size="50" placeholder="Nom de la société"><br>
+                                
+                                <label for="ntva">N° TVA</label><br>
+                                <input type="number" id="ntva" name="ntva"  class="custom-input1" placeholder="TVA"><br>
+                                
+                                <label for="adresse">ADRESSE</label><br>
+                                <textarea id="adresse" name="adresse" rows="5" cols="52" placeholder="Adresse complète"></textarea><br>
+                                
+                                <label for="codePostal">CODE POSTAL</label><br>
+                                <input type="number" id="codePostal" name="codePostal"  class="custom-input2" placeholder="CP"><br>
+                                
+                                <label for="ville">VILLE</label><br>
+                                <input type="text" id="ville" name="ville" size="15" placeholder="Nom de la ville"><br>
+                                </div>
+                        </fieldset>
+                    
+                        <fieldset class="contour">
+                                <legend>REPRÉSENTANT</legend>
+                                <p>GENRE</p>
+                                <div class="genre">
+                                    <input type="radio" id="genre-homme" name="genre" value="homme">
+                                    <label for="genre-homme">Homme</label><br>
+                                    
+                                    <input type="radio" id="genre-femme" name="genre" value="femme">
+                                    <label for="genre-femme">Femme</label><br>
+                                    
+                                    <input type="radio" id="genre-np" name="genre" value="non-précisé">
+                                    <label for="genre-np">Non précisé</label><br>
+                                </div>
+                                
+                                <div class="info">
+                                <label for="fname">NOM*</label><br>
+                                <input type="text" id="fname" name="fname" placeholder="Nom de famille" required><br>
+                                
+                                <label for="lname">PRÉNOM*</label><br>
+                                <input type="text" id="lname" name="lname" placeholder="Prénom" required><br>
+                                
+                                <label for="email">COURRIEL*</label><br>
+                                <input type="email" id="email" name="email" pattern="abc@example.com" placeholder="E-mail"><br>
+                                
+                                <label for="tel">TÉLÉPHONE</label><br>
+                                <input type="tel" id="tel" name="tel" minlength="10" maxlength="12" placeholder="Téléphone"><br>
+                                </div>
+                        </fieldset>            
+                </div>
+
+                <label class="Commentaire" for="message">COMMENTAIRES</label><br>
+                <textarea name="message" id="message" rows="5" cols="90" placeholder="Information supplémentaire à nous faire parvenir."></textarea><br>
                 
-                    <fieldset class="contour">
-                            <legend>REPRÉSENTANT</legend>
-                            <p>GENRE</p>
-                            <div class="genre">
-                                <input type="radio" id="genre-homme" name="genre" value="homme">
-                                <label for="genre-homme">Homme</label><br>
-                                
-                                <input type="radio" id="genre-femme" name="genre" value="femme">
-                                <label for="genre-femme">Femme</label><br>
-                                
-                                <input type="radio" id="genre-np" name="genre" value="non-précisé">
-                                <label for="genre-np">Non précisé</label><br>
-                            </div>
-                            
-                            <div class="info">
-                            <label for="fname">NOM*</label><br>
-                            <input type="text" id="fname" name="fname" placeholder="Nom de famille" required><br>
-                            
-                            <label for="lname">PRÉNOM*</label><br>
-                            <input type="text" id="lname" name="lname" placeholder="Prénom" required><br>
-                            
-                            <label for="email">COURRIEL*</label><br>
-                            <input type="email" id="email" name="email" pattern="abc@example.com" placeholder="E-mail"><br>
-                            
-                            <label for="tel">TÉLÉPHONE</label><br>
-                            <input type="tel" id="tel" name="tel" minlength="10" maxlength="12" placeholder="Téléphone"><br>
-                            </div>
-                    </fieldset>            
-            </div>
+                <p>*:Champs obligatoires</p>
+                
+                <input class="submit" type="submit"> 
+                <input class="reset" type="reset">
 
-            <label class="Commentaire" for="message">COMMENTAIRES</label><br>
-            <textarea name="message" id="message" rows="5" cols="90" placeholder="Information supplémentaire à nous faire parvenir."></textarea><br>
-            
-            <p>*:Champs obligatoires</p>
-            
-            <input class="submit" type="submit"> 
-            <input class="reset" type="reset">
-
-        </form>
-    
-        <section class="question">
-            <h3>Questions fréquentes</h3>
-            <ul>
-                <li>
-                    <span>
-                        Mon fournisseur n'apparaît pas dans la liste déroulante, comment faire ?
-                    </span><br>
-                Sélectionnez "Autres" dans la liste déroulante puis indiquez-nous le nom de votre fournisseur dans le champs "Commentaires".
-                </li>
-                <li>
-                    <span>
-                        Quel est le delai de réponse ?
-                    </span><br>
-                Nos équipes traitent votre demande au plus vite. Vous obtiendrez généralement une réponse sous 48h (jours ouvrés)
-                </li>
-                <li>
-                    <span>
-                        J'ai une question, comment vous contacter ?
-                    </span><br>
-                Vous pouvez utilisez notre <a href="#">formulaire de contact</a> ou nous envoyer directement un mail à <a href="#">info@mycompany.com</a>
-                </li>
-            </ul>
-        </section>
-    </div>
+            </form>
+        
+            <section class="question">
+                <h3>Questions fréquentes</h3>
+                <ul>
+                    <li>
+                        <span>
+                            Mon fournisseur n'apparaît pas dans la liste déroulante, comment faire ?
+                        </span><br>
+                    Sélectionnez "Autres" dans la liste déroulante puis indiquez-nous le nom de votre fournisseur dans le champs "Commentaires".
+                    </li>
+                    <li>
+                        <span>
+                            Quel est le delai de réponse ?
+                        </span><br>
+                    Nos équipes traitent votre demande au plus vite. Vous obtiendrez généralement une réponse sous 48h (jours ouvrés)
+                    </li>
+                    <li>
+                        <span>
+                            J'ai une question, comment vous contacter ?
+                        </span><br>
+                    Vous pouvez utilisez notre <a href="#">formulaire de contact</a> ou nous envoyer directement un mail à <a href="#">info@mycompany.com</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main> 
 </body>
 </html>

@@ -7,7 +7,7 @@
 .contour {
     margin-bottom: 20px; 
     margin-top: 10px;
-    width: 100%;
+    width: 90%;
 }
 
 
@@ -15,6 +15,7 @@
     text-align: center;
     padding: 7px;
     background-color: black;
+    width: 100%;
 }
 
 .menuDuHaut span{
@@ -63,6 +64,7 @@ li {
 .background {
     background-color: rgba(222, 221, 221, 0.7);
     padding: 4px 8px 4px 8px;
+    width: 100%;
 }
 
 .contour .entreprise label, 
@@ -100,15 +102,58 @@ legend {
     font-weight: bold;
 }
 
+main {
+    width: 100%;
+}
 
-@media screen and (max-width: 768px)  {
+@media (max-width: 1023px)  {
     .formulaire {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .background {
+        width: 100%;
+    }
+
+    .contour {
+        width: 96%;
+    }
+}
+
+@media (max-width: 767px) {
+    .formulaire {
+        display: flex;
         flex-direction: column;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 520px) {
     .formulaire {
+        display: flex;
         flex-direction: column;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .contour {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulaire {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .contour {
+        width: 80%;
     }
 }
