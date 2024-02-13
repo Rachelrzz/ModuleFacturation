@@ -4,13 +4,17 @@
 
 
 
-.contour {
+.contour1 {
     margin-bottom: 20px; 
     margin-top: 10px;
     width: 90%;
 }
 
-
+.contour2 {
+    margin-bottom: 20px; 
+    margin-top: 10px;
+    width: 90%;
+}
 .menuDuHaut {
     text-align: center;
     padding: 7px;
@@ -67,9 +71,9 @@ li {
     width: 100%;
 }
 
-.contour .entreprise label, 
-.contour .info label, 
-.contour p, 
+.contour1 .entreprise label, 
+.contour2 .info label, 
+.contour2 p, 
 .fournisseur,
 .Commentaire {
     font-size: 14px;
@@ -116,7 +120,7 @@ main {
         width: 100%;
     }
 
-    .contour {
+    .contour1, .contour2 {
         width: 96%;
     }
 }
@@ -125,6 +129,10 @@ main {
     .formulaire {
         display: flex;
         flex-direction: column;
+    }
+
+    #message {
+        width: 75%;
     }
 }
 
@@ -135,25 +143,18 @@ main {
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
-    .contour {
+    .contour1, .contour2 {
         width: 90%;
     }
-}
 
-@media (max-width: 480px) {
-    .formulaire {
-        display: flex;
-        flex-direction: column;
+    #message {
+        width: 75%;
     }
 
-    h1 {
-        font-size: 30px;
-    }
-
-    .contour {
+    #societe , #adresse {
         width: 80%;
     }
 }
