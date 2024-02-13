@@ -1,0 +1,119 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+
+.contour {
+    margin-bottom: 20px; 
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+.menuDuHaut {
+    text-align: center;
+    padding: 7px;
+    background-color: black;
+}
+
+.menuDuHaut span{
+    color: white;
+}
+
+.menuDuHaut a{
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    margin-top: 20px;
+}
+
+.question span {
+    font-weight: bold;
+}
+
+li {
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+.genre {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: row;
+}
+
+.custom-input1 {
+    width: 85px;
+    height: 15px;
+}
+
+.custom-input2 {
+    width: 75px;
+    height: 15px;
+}
+
+.background {
+    background-color: rgba(222, 221, 221, 0.7);
+    padding: 4px 8px 4px 8px;
+}
+
+.contour .entreprise label, 
+.contour .info label, 
+.contour p, 
+.fournisseur,
+.Commentaire {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(241, 102, 51);
+}
+
+input, textarea, select {
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.submit {
+    background-color: rgb(241, 102, 51);
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    text-transform: capitalize;
+}
+
+.reset {
+    padding: 5px 15px;
+    text-transform: capitalize;
+}
+
+legend {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px)  {
+    body {
+        flex-direction: column;
+    }
+
+    h1 {
+        
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        flex-direction: column;
+    }
+}
