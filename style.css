@@ -102,18 +102,13 @@ legend {
 
 
 @media screen and (max-width: 768px)  {
-    body {
+    .formulaire {
         flex-direction: column;
     }
-
-    h1 {
-        
-    }
-
 }
 
 @media screen and (max-width: 480px) {
-    body {
+    .formulaire {
         flex-direction: column;
     }
 }
